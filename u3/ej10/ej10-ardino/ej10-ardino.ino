@@ -9,7 +9,7 @@ void loop() {
 
   if (Serial.available()) {
     if (Serial.read() == 0x73) {
-//little end
+      //little end
       /*
         Serial.write((uint8_t)( x & 0x000000FF));
         Serial.write((uint8_t)((x >> 8) & 0x000000FF));
@@ -17,8 +17,8 @@ void loop() {
         Serial.write((uint8_t)((x >> 24)));
       */
 
-   Serial.write((uint8_t *)( &x , 4 ));
-// big end
+      Serial.write((uint8_t *)( &x , 4 ));
+      // big end
       /*
         Serial.write((uint8_t)((x >> 24)));
         Serial.write((uint8_t)((x >> 16) & 0x000000FF));
@@ -28,7 +28,7 @@ void loop() {
 
       /*  for(int i=3 ; i >= 0 ; i++){
           Serial.write( ((uint8_t *) &x) + i, 1 );
-          */
-        }
+      */
     }
   }
+}
