@@ -51,71 +51,34 @@ namespace serialBinary
                     {
                         _serialPort.Read(buffer, 0, 17);
                         Serial.write(0x3E);
+                          //ECRIBE EL PAQUETE?
                     }
-                    //ECRIBE EL PAQUETE
+                  
                     state = StatesSerialCom.INIT;
 
                     break;
                 case ANSWER_NEG:
-                int counter = 0;
-                while (counter != 3){
-                    Serial.write(0xB0);
-                    
-                    if (_serialPort.BytesToRead >= 17)
+                    int counter = 0;
+                    while (counter != 3)
                     {
-                        _serialPort.Read(buffer, 0, 17);
-                        counter = counter + 1;
+                        
 
-                     
-                    }
-                }
-                   if (counter == 3)
+                        if (_serialPort.BytesToRead >= 17)
                         {
-                            state = StatesSerialCom.INIT;
-
+                            _serialPort.Read(buffer, 0, 17);
+                            Serial.write(0xB0);
+                            counter = counter + 1;
                         }
+                    }
+                    if (counter == 3)
+                    {
+                        state = StatesSerialCom.INIT;
+                        //mensaje de error
+
+                    }
 
                     break;
             }
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*   while(true){
-                    if(_serialPort.BytesToRead >= 17){
-                        _serialPort.Read(buffer,0,17);
-
-                        if (Console.KeyAvailable == true)
-                {
-                    ConsoleKeyInfo key;
-                    key = Console.ReadKey(true);
-
-                    if (key.Key == ConsoleKey.R)
-                    {
-                        _serialPort.WriteLine("read");
-                        string message = _serialPort.ReadLine();
-                        Console.WriteLine(message);
-
-                    }else if (key.Key == ConsoleKey.E)
-                    {
-                        _serialPort.WriteLine("outON");
-                        string message = _serialPort.ReadLine();
-                        Console.WriteLine(message);
-
-                    }
-                }
-            }
-        }
-*/
