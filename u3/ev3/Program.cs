@@ -1,15 +1,19 @@
 ﻿
 using System;
 using System.IO.Ports;
+using System.Collections.Generic;
 
-public enum StatesSerialCom { INIT, WAIT_CASE, ANSWER_POS, ANSWER_NEG };
+
+
+
 namespace serialBinary
 {
-    class Program
+    public enum StatesSerialCom { INIT, WAIT_CASE, ANSWER_POS, ANSWER_NEG };
+    public class Program
     {
         static void Main(string[] args)
         {
-
+            int counter = 0;
             StatesSerialCom state = StatesSerialCom.INIT;
             switch (state)
             {
@@ -51,29 +55,29 @@ namespace serialBinary
                     {
                         _serialPort.Read(buffer, 0, 17);
                         Serial.write(0x3E);
-                          //ECRIBE EL PAQUETE?
+                        //ECRIBE EL PAQUETE?
                     }
-                  
+
                     state = StatesSerialCom.INIT;
 
                     break;
                 case ANSWER_NEG:
-                    int counter = 0;
+
                     while (counter != 3)
                     {
-                        
+
 
                         if (_serialPort.BytesToRead >= 17)
                         {
                             _serialPort.Read(buffer, 0, 17);
-                            Serial.write(0xB0);
+                            _serialPort.write(0xB0);
                             counter = counter + 1;
                         }
                     }
                     if (counter == 3)
                     {
                         state = StatesSerialCom.INIT;
-                        //mensaje de error
+                        //mensaje de error?
 
                     }
 

@@ -1,16 +1,32 @@
 {
   "version": 2,
-  "dgSpecHash": "pa9EFs0GyKIXCfgVc28YqxWGo/WDOg7oFQqgDR8L/7ObKLs8/OSFF7QmRXIpc6LPYMUWB++gDRb6B3jOcltt3g==",
+  "dgSpecHash": "Xx8j/aJznsRyo1aIyRsO8hfueabRxOOKFFl9D4pEoXEwbStCzm4l9YmC0kqEi1XkwiRB339CbX6oaMD8ZMyAzg==",
   "success": true,
   "projectFilePath": "/home/pop-os/sfi1/u3/ev3/ev3.csproj",
   "expectedPackageFiles": [
+    "/home/pop-os/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/home/pop-os/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "/home/pop-os/.nuget/packages/runtime.linux-arm.runtime.native.system.io.ports/6.0.0/runtime.linux-arm.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
     "/home/pop-os/.nuget/packages/runtime.linux-arm64.runtime.native.system.io.ports/6.0.0/runtime.linux-arm64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
     "/home/pop-os/.nuget/packages/runtime.linux-x64.runtime.native.system.io.ports/6.0.0/runtime.linux-x64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
     "/home/pop-os/.nuget/packages/runtime.native.system.io.ports/6.0.0/runtime.native.system.io.ports.6.0.0.nupkg.sha512",
     "/home/pop-os/.nuget/packages/runtime.osx-arm64.runtime.native.system.io.ports/6.0.0/runtime.osx-arm64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
     "/home/pop-os/.nuget/packages/runtime.osx-x64.runtime.native.system.io.ports/6.0.0/runtime.osx-x64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
-    "/home/pop-os/.nuget/packages/system.io.ports/6.0.0/system.io.ports.6.0.0.nupkg.sha512"
+    "/home/pop-os/.nuget/packages/system.collections/4.3.0/system.collections.4.3.0.nupkg.sha512",
+    "/home/pop-os/.nuget/packages/system.collections.generic.redblack/1.3.4618/system.collections.generic.redblack.1.3.4618.nupkg.sha512",
+    "/home/pop-os/.nuget/packages/system.io.ports/6.0.0/system.io.ports.6.0.0.nupkg.sha512",
+    "/home/pop-os/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Collections.Generic.RedBlack 1.3.4618' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "System.Collections.Generic.RedBlack",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

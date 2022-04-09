@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "wBFA7fn2FJzAHagqi3uMR71uiGH4MgSqR0vFDzrxrcbFj54tIhzZcmSHu1+htrNVPFhZWfJ9oFcQKdRDvoHC/Q==",
+  "success": true,
+  "projectFilePath": "/home/pop-os/sfi1/u3/ev3.1/ev3.1.csproj",
+  "expectedPackageFiles": [
+    "/home/pop-os/.nuget/packages/runtime.linux-arm.runtime.native.system.io.ports/6.0.0/runtime.linux-arm.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "/home/pop-os/.nuget/packages/runtime.linux-arm64.runtime.native.system.io.ports/6.0.0/runtime.linux-arm64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "/home/pop-os/.nuget/packages/runtime.linux-x64.runtime.native.system.io.ports/6.0.0/runtime.linux-x64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "/home/pop-os/.nuget/packages/runtime.native.system.io.ports/6.0.0/runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "/home/pop-os/.nuget/packages/runtime.osx-arm64.runtime.native.system.io.ports/6.0.0/runtime.osx-arm64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "/home/pop-os/.nuget/packages/runtime.osx-x64.runtime.native.system.io.ports/6.0.0/runtime.osx-x64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "/home/pop-os/.nuget/packages/system.io.ports/6.0.0/system.io.ports.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
