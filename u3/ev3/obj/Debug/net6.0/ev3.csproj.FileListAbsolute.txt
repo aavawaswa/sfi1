@@ -1,0 +1,5 @@
+/home/pop-os/sfi1/u3/ev3/obj/Debug/net6.0/ev3.csproj.AssemblyReference.cache
+/home/pop-os/sfi1/u3/ev3/obj/Debug/net6.0/ev3.GeneratedMSBuildEditorConfig.editorconfig
+/home/pop-os/sfi1/u3/ev3/obj/Debug/net6.0/ev3.AssemblyInfoInputs.cache
+/home/pop-os/sfi1/u3/ev3/obj/Debug/net6.0/ev3.AssemblyInfo.cs
+/home/pop-os/sfi1/u3/ev3/obj/Debug/net6.0/ev3.csproj.CoreCompileInputs.cache
